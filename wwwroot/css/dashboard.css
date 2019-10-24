@@ -1,0 +1,70 @@
+body {
+    background-image: url("../img/FerrisWheel.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width: 100%;
+    padding-right: 1%;
+}
+
+.regbar {
+    background-color: rgba(11, 11, 11, 0.419);
+    margin-bottom: -650px;
+    padding-bottom: 650px;
+    padding-top: 12%;
+    padding-left: 4%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+p {
+    color: rgba(215, 242, 248, 0.895);
+}
+
+a {
+    text-decoration: underline;
+    font-size: 0.75em;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: rgba(206, 249, 255, 0.759);
+}
+
+#logOut {
+    margin-top: 110%;
+}
+
+#new {
+    margin-top: 1%;
+    margin-right: -4.5%;
+}
+
+.logOut {
+    color: rgba(206, 249, 255, 0.759);
+}
+
+.new {
+    color: rgba(55, 66, 67, 0.793);
+}
+
+th {
+    font-size: 12px;
+}
+
+td {
+    font-size: 0.75em;
+}
+
+.link {
+    color: rgb(10, 47, 53);
+}
+
+.btn-sm {
+    font-size: 0.75em;
+    text-decoration: none;
+}
+
+table {
+    background-color: rgba(255, 255, 255, 0.461);
+    margin-top: 1%;
+}

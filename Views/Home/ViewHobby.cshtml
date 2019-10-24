@@ -1,0 +1,65 @@
+@model WrapperModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/view.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="jumbotron">
+        <h4>Might you like to view a thing?</h4>
+    </div>
+        <a href="Dashboard" class="dashboard">Dashboard</a>
+        <a href="SignOut" class="logOut">Log Out</a>
+    <div class="container">
+    </div>
+    <div class="container experienceInfo">
+        <div class="row">
+            <div class="col">
+                <h3>@Model.newHobby.Name</h3>
+                <h5>@Model.newHobby.Creator.FirstName @Model.newHobby.Creator.LastName</h5>
+                <h6>Description:</h6>
+                <p>@Model.newHobby.Description</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h6>@Model.newHobby.Name Enthusiasts:</h6>
+                @{
+                    int count = 0;
+                    foreach(var enthusiast in Model.newHobby.Enthusiast)
+                    {
+                        <p>@enthusiast.User.FirstName @enthusiast.User.LastName</p>
+
+                        @if(@Model.newUser.UserID == @enthusiast.User.UserID)
+                        {
+                            count++;
+                        }
+                    }
+                    @if(@Model.newUser.UserID == @Model.newHobby.Creator.UserID)
+                    {
+                        <a href="DeleteHobby/@Model.newHobby.HobbyID" class="btn btn-dark btn-sm">Delete</a>
+                        <a href="EditHobby/@Model.newHobby.HobbyID" class="btn btn-light btn-sm">Edit Hobby</a>
+                    }
+                    else 
+                    {
+                        @if(count == 0)
+                        {
+                            <form action="Join/@Model.newHobby.HobbyID" method="POST">
+                                <input type="submit" class="btn btn-sm btn-light" value="Add to Hobbies">
+                            </form>
+                        }
+                        else
+                        {
+                            <form action="Leave/@Model.newHobby.HobbyID" method="POST">
+                                <input type="submit" class="btn btn-sm btn-light" value="Leave Hobby">
+                            </form>
+                        }
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>

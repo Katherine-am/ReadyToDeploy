@@ -1,0 +1,78 @@
+body {
+    background-image: url("../img/Amsterdam.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    margin-bottom: 4%;
+}
+
+.regbar {
+    background-color: rgba(0, 0, 0, 0.496);
+    height: 100vh;
+    padding-top: 2%;
+}
+
+form {
+    padding-top: 2%;
+}
+
+.col-form-label {
+    color: white;
+    font-size: 11px;
+    font-size: 0.75em;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.form-control {
+    border-radius: 0.2em;
+    background-color: rgba(255, 255, 255, 0.684);
+    font-size: 0.75em;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-block {
+    border-radius: 0.2em;
+    background-color: rgb(211, 173, 133);
+    border-color: rgb(211, 173, 133);
+    font-size: 0.75em;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.btn-dark {
+    border-radius: 0.2em;
+    background-color: rgb(89, 89, 88);
+    border-color: rgb(84, 84, 84);
+    font-size: 0.75em;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.btn-success {
+    border-radius: 0.2em;
+    background-color: rgb(193, 193, 193);
+    border-color: rgb(193, 193, 193);
+    font-size: 0.75em;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+h3 {
+    color:  rgb(244, 244, 244);
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+span {
+    color: rgb(216, 115, 52);
+}
